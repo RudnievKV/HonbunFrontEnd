@@ -1,0 +1,23 @@
+<ngx-loading [show]="loading"
+  [config]="{ backdropBorderRadius: '3px', primaryColour: '#ffff00', secondaryColour: '#ffff00', tertiaryColour: '#ffff00' }"></ngx-loading>
+<section class="add-list__page">
+  <div class="container">
+    <div class="add-list__body">
+      <div class="add-list__title">
+        <h1>Увійти</h1>
+      </div>
+      <form [formGroup]="SignInForm" (ngSubmit)="onSubmit()">
+        <div class="add-list__inputs">
+          <p>Емейл</p>
+          <input type="email" id="email" placeholder="Введите текст" formControlName="email" required>
+          <p>Пароль</p>
+          <input type="password" id="password" placeholder="Введите текст" formControlName="password" required>
+        </div>
+        <div class="add-list__buttons">
+          <button type="submit" class="btn" [disabled]="!SignInForm.valid">Увійти</button>
+          <a routerLink="/registration" class="btn">Регістрація</a>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>

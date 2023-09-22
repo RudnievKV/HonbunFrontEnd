@@ -1,0 +1,32 @@
+<ngx-loading [show]="loading"
+  [config]="{ backdropBorderRadius: '3px', primaryColour: '#ffff00', secondaryColour: '#ffff00', tertiaryColour: '#ffff00' }"></ngx-loading>
+<section class="add-list__page">
+  <div class="container">
+    <div class="add-list__body">
+      <div class="add-list__block">
+        <div class="add-list__title">
+          <h1 style="margin-right: 50px;">Профіль</h1>
+        </div>
+        <div class="add-list__btns">
+          <a routerLink="/profile/change" class="btn" style="margin-left: 30px;">Змінити</a>
+        </div>
+      </div>
+
+      <div style="display: flex; flex-direction: column; align-items: center;">
+        <div class="add-list__inputs">
+          <p>Ім'я користувача : {{username}}</p>
+          <div style="display: flex; align-items: center;">
+          </div>
+        </div>
+        <div class="add-list__inputs">
+          <p>Емейл : {{email}}</p>
+          <div style="display: flex; align-items: center;">
+          </div>
+        </div>
+      </div>
+      <div class="add-list__buttons">
+        <a (click)="Back()" class="btn">Назад</a>
+      </div>
+    </div>
+  </div>
+</section>

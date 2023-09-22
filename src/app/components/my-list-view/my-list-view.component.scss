@@ -1,0 +1,124 @@
+.add-list__page {
+  text-align: center;
+}
+
+.container {}
+
+.add-list__body {
+  border: 2px solid black;
+  border-radius: 5px;
+  margin-top: 50px;
+  margin: 60px 240px;
+}
+
+.add-list__title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.add-list__block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 180px;
+}
+
+.add-list__btns {
+  padding-left: 25px;
+
+  a {
+    margin-left: 20px;
+  }
+}
+
+.topics {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 65%;
+  padding-left: 125px;
+  text-align: center;
+  align-items: center;
+
+  p {
+    align-items: center;
+    width: 30%;
+    padding: 0px 40px;
+    padding-bottom: 3px;
+    border-bottom: 1px solid #000;
+  }
+}
+
+
+.add-list__inputs {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 15px;
+
+  input {
+    width: 50%;
+    padding: 5px 5px;
+    outline: none;
+    color: crimson;
+    font-weight: 600;
+  }
+}
+
+.add-list__buttons {
+  padding-top: 40px;
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+}
+
+textarea {
+  resize: none;
+}
+
+.btn {
+  margin-bottom: 20px;
+  padding: 10px 20px;
+  font-weight: 500;
+  background-color: #ccc;
+  color: #333;
+  text-decoration: none;
+  border-radius: 4px;
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+  outline: none;
+}
+
+.btn:hover {
+  background-color: rgb(204, 118, 118);
+}
+
+.neponyat-block {
+  border: 1px solid black;
+  border-radius: 5px;
+  margin: 0 100px;
+}
+
+.neponyat-item {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+
+  border: 1px solid black;
+  border-radius: 5px;
+  margin: 30px 20px;
+}
+
+.text {}
+
+.neponyat__btns {
+  .btn:first-child {
+    margin: 15px;
+  }
+}

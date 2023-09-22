@@ -1,0 +1,27 @@
+<ngx-loading [show]="loading"
+  [config]="{ backdropBorderRadius: '3px', primaryColour: '#ffff00', secondaryColour: '#ffff00', tertiaryColour: '#ffff00' }"></ngx-loading>
+<section class="add-list__page">
+  <div class="container">
+    <div class="add-list__body" *ngIf="remainingWordDtos">
+      <div class="absolute">
+        <p>Кількість слів: {{currentCount}}/{{numberOfWords}}</p>
+      </div>
+      <div class="add-list__title">
+        <h1>{{remainingWordDtos[currentCount].MeaningReadings[0].OriginalEntry}}</h1>
+      </div>
+      <div class="add-list__inputs" *ngIf="show">
+        <p>{{remainingWordDtos[currentCount].MeaningReadings[0].Meaning}}</p>
+        <p>{{remainingWordDtos[currentCount].MeaningReadings[0].Reading}}</p>
+        <p>{{remainingWordDtos[currentCount].MeaningReadings[0].PartOfSpeech}}</p>
+      </div>
+
+      <div class="add-list__buttons" *ngIf="!show">
+        <a (click)="ShowAnswer()" class="btn">Показати відповідь</a>
+      </div>
+      <div class="add-list__buttons" *ngIf="show">
+        <a (click)="AnswerCorrently()" class="greenbtn">Правильно</a>
+        <a (click)="AnswerIncorrently()" class="redbtn">Неправильно</a>
+      </div>
+    </div>
+  </div>
+</section>

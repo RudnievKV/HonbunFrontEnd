@@ -1,0 +1,20 @@
+<section class="header__background">
+  <header class="header container">
+    <div class="header__logo"><a routerLink="">HonBunNoAnki</a></div>
+    <nav class="header__nav">
+      <ul *ngIf="isAuthenticated()">
+        <li class="header__nav-item"><a routerLink="">Панель управління</a></li>
+        <li class="header__nav-item"><a routerLink="/review">Рев'ю</a></li>
+        <li class="header__nav-item"><a routerLink="/lists">Списки</a></li>
+        <!-- <li class="header__nav-item"><a href="#">Услуги</a></li>
+        <li class="header__nav-item"><a href="#">Контакты</a></li> -->
+      </ul>
+    </nav>
+    <div class="header__registration" *ngIf="!isAuthenticated()">
+      <a routerLink="/login" class="btn">Вхід</a>
+    </div>
+    <div class="header__registration" *ngIf="isAuthenticated()">
+      <a (click)="logOut()" class="btn">Вийти</a>
+    </div>
+  </header>
+</section>

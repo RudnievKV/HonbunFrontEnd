@@ -1,0 +1,22 @@
+<ngx-loading [show]="loading"
+  [config]="{ backdropBorderRadius: '3px', primaryColour: '#ffff00', secondaryColour: '#ffff00', tertiaryColour: '#ffff00' }"></ngx-loading>
+<section class="add-list__page">
+  <div class="container">
+    <div class="add-list__body">
+      <div class="add-list__title">
+        <h1>Додати список</h1>
+      </div>
+      <div class="add-list__inputs">
+        Назва
+        <input style=" height: 25px;" type="text" id="my-input" placeholder="Назва" [(ngModel)]="name">
+        Опис
+        <textarea style="resize: none; height: 100px; width: 365px;" type="text" id="my-input" placeholder="Опис"
+          [(ngModel)]="description"></textarea>
+      </div>
+      <div class="add-list__buttons">
+        <a (click)="Add()" class="btn">Додати</a>
+        <a (click)="Cancel()" class="btn">Назад</a>
+      </div>
+    </div>
+  </div>
+</section>

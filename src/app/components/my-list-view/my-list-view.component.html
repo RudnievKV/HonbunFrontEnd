@@ -1,0 +1,42 @@
+<ngx-loading [show]="loading"
+  [config]="{ backdropBorderRadius: '3px', primaryColour: '#ffff00', secondaryColour: '#ffff00', tertiaryColour: '#ffff00' }"></ngx-loading>
+<section class="add-list__page">
+  <div class="container">
+    <div class="add-list__body">
+      <div class="add-list__block">
+        <div class="add-list__title">
+          <h1>{{wordCollection.Name}}</h1>
+        </div>
+        <div class="add-list__btns">
+          <a [routerLink]="'/mylist/'+id+'/change'" class="btn">Змінити</a>
+        </div>
+      </div>
+      <div class="add-list__inputs">
+        <textarea name="" id="" cols="60" rows="10" disabled [(ngModel)]="wordCollection.Description"></textarea>
+      </div>
+      <div class="topics">
+        <p>Кількість слів</p>
+        <p>{{wordCollection.Words.length}}</p>
+      </div>
+      <div class="add-list__buttons">
+        <a [routerLink]="'/mylist/'+id+'/words/word-add'" class="btn">Додати слово</a>
+        <a [routerLink]="'/mylist/'+id+'/words/word-add-from-text'" class="btn">Додати слова з тексту</a>
+      </div>
+      <div class="neponyat-block">
+        <div class="neponyat-item" *ngFor="let word of wordCollection.Words">
+          <div class="text">
+            <p>{{word.MeaningReadings[0].OriginalEntry}}</p>
+            <p>{{word.MeaningReadings[0].Meaning | truncate: 15}}</p>
+          </div>
+          <div class="neponyat__btns">
+            <a [routerLink]="'/mylist/'+id+'/words/'+ word.Word_ID +'/change'" class="btn">Змінити</a>
+            <a (click)="Delete(word.Word_ID)" class="btn">Видалити</a>
+          </div>
+        </div>
+      </div>
+      <div class="add-list__buttons">
+
+      </div>
+    </div>
+  </div>
+</section>

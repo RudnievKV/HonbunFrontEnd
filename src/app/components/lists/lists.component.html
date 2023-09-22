@@ -1,0 +1,21 @@
+<ngx-loading [show]="loading"
+  [config]="{ backdropBorderRadius: '3px', primaryColour: '#ffff00', secondaryColour: '#ffff00', tertiaryColour: '#ffff00' }"></ngx-loading>
+<section class="add-list__page">
+  <div class="container">
+    <div class="add-list__body">
+      <div class="add-list__title">
+        <h1>Списки інших користувачів</h1>
+      </div>
+      <div class="listbody" *ngFor="let wordCollection of wordCollections;">
+        <div class="listelements">
+          <p>{{wordCollection.Name}}</p>
+          <textarea style="resize: none;" name="" id="" cols="65" rows="10"
+            disabled>{{wordCollection.Description}}</textarea>
+          <p>Кількість слів: {{wordCollection.Words.length}}</p>
+          <button (click)="Add(wordCollection.WordCollection_ID)"
+            style="background-color: green; padding: 10px 20px; margin-bottom: 25px;" class="btn">Додати</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

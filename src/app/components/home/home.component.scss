@@ -1,0 +1,161 @@
+.view-Profile__page {
+  text-align: center;
+}
+
+.container {}
+
+.view-Profile__body {
+  border: 2px solid black;
+  border-radius: 5px;
+  margin-top: 50px;
+  margin: 60px 240px;
+}
+
+.view-Profile__title {}
+
+.view-Profile__achievement {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 15px;
+
+  input {
+    width: 50%;
+    padding: 5px 5px;
+    outline: none;
+    color: crimson;
+    font-weight: 600;
+  }
+}
+
+.view-Profile__buttons {
+  padding-top: 40px;
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+}
+
+
+.btn {
+  margin-bottom: 20px;
+  padding: 10px 20px;
+  font-weight: 500;
+  background-color: #ccc;
+  color: #333;
+  text-decoration: none;
+  border-radius: 4px;
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+  outline: none;
+}
+
+.btn:hover {
+  background-color: rgb(204, 118, 118);
+}
+
+.view-Profile__Achievement {
+  padding: 0px 20px;
+  display: flex;
+  gap: 20px;
+  text-align: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.ach {}
+
+.ach__result {
+  display: flex;
+  gap: 10px;
+  padding: 20px 15px;
+  text-align: left;
+  flex-direction: column;
+  width: 40%;
+  border: 1px solid black;
+  border-radius: 5px;
+
+  p {
+    border-bottom: 1px solid #000;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+}
+
+.ach__dost {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  padding: 20px 15px;
+  padding-left: 15px;
+  text-align: left;
+  width: 40%;
+  border: 1px solid black;
+  border-radius: 5px;
+
+  p {
+    border-bottom: 1px solid #000;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+}
+
+.view-Profile__dostizheniya {
+  padding: 0px 20px;
+  display: flex;
+  gap: 20px;
+  text-align: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 100%;
+
+}
+
+.btn {
+  margin-bottom: 20px;
+  padding: 10px 20px;
+  font-weight: 500;
+  background-color: #ccc;
+  color: #333;
+  text-decoration: none;
+  border-radius: 4px;
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+  outline: none;
+}
+
+.dostizheniya__block {
+  display: flex;
+  gap: 10px;
+  padding: 20px 15px;
+  text-align: left;
+  flex-direction: column;
+  width: 40%;
+  border: 1px solid black;
+  border-radius: 5px;
+
+  p {
+    margin: 0;
+    padding-left: 5px;
+    border-bottom: 1px solid #000;
+    margin: 0 20px;
+  }
+
+  a {
+    margin-bottom: 0;
+  }
+}
+
+.dostizheniya__btns {
+  padding-top: 15px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.btn {}

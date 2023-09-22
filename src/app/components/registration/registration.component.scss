@@ -1,0 +1,89 @@
+.add-list__page {
+  text-align: center;
+}
+
+.container {}
+
+.add-list__body {
+  border: 2px solid black;
+  border-radius: 5px;
+  margin-top: 50px;
+  margin: 60px 240px;
+}
+
+.ng-valid[required],
+.ng-valid.required {
+  border-left: 5px solid #42A948;
+  /* green */
+}
+
+.ng-invalid:not(form) {
+  border-left: 5px solid #a94442;
+  /* red */
+}
+
+.btn {
+  margin-bottom: 20px;
+  padding: 10px 20px;
+  font-weight: 500;
+  background-color: #ccc;
+  color: #333;
+  text-decoration: none;
+  border-radius: 4px;
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+  outline: none;
+}
+
+.add-list__title {}
+
+.add-list__inputs {
+  display: flex;
+  flex-direction: column;
+
+  input {
+    width: 250px;
+    padding: 5px 5px;
+    outline: none;
+    font-weight: 600;
+  }
+
+  p {
+    margin: 10px 0px 10px 0px;
+    text-align: left;
+
+  }
+}
+
+.add-list__buttons {
+  padding-top: 40px;
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+}
+
+.btn {
+  margin-bottom: 20px;
+  padding: 10px 20px;
+  font-weight: 500;
+  background-color: #ccc;
+  color: #333;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+button:disabled,
+button[disabled] {
+  border: 1px solid #999999;
+  background-color: #cccccc;
+  color: #666666;
+  cursor: auto;
+  background-color: #ccc !important;
+
+}
+
+.btn:hover {
+  background-color: rgb(204, 118, 118);
+}

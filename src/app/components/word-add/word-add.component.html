@@ -1,0 +1,25 @@
+<ngx-loading [show]="loading"
+  [config]="{ backdropBorderRadius: '3px', primaryColour: '#ffff00', secondaryColour: '#ffff00', tertiaryColour: '#ffff00' }"></ngx-loading>
+<section class="add-list__page">
+  <div class="container">
+    <div class="add-list__body">
+      <div class="add-list__title">
+        <h1>Додати слово</h1>
+      </div>
+      <div class="add-list__inputs">
+        Оригінал
+        <input type="text" id="my-input" placeholder="Оригінал" [(ngModel)]="originalEntry">
+        Вимова
+        <input type="text" id="my-input" placeholder="Вимова" [(ngModel)]="reading">
+        Значення
+        <input type="text" id="my-input" placeholder="Значення" [(ngModel)]="meaning">
+        Частина речення
+        <input type="text" id="my-input" placeholder="Частина речення" [(ngModel)]="partOfSpeech">
+      </div>
+      <div class="add-list__buttons">
+        <a (click)="Add()" class="btn">Додати</a>
+        <a (click)="Cancel()" class="btn">Назад</a>
+      </div>
+    </div>
+  </div>
+</section>

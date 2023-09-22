@@ -1,0 +1,18 @@
+<ngx-loading [show]="loading"
+  [config]="{ backdropBorderRadius: '3px', primaryColour: '#ffff00', secondaryColour: '#ffff00', tertiaryColour: '#ffff00' }"></ngx-loading>
+<section class="add-list__page">
+  <div class="container">
+    <div class="add-list__body">
+      <div class="add-list__title">
+        <h1>Додати слова з тексту</h1>
+      </div>
+      <div class="add-list__inputs">
+        <textarea name="" id="" cols="50" rows="10" [(ngModel)]="text"></textarea>
+      </div>
+      <div class="add-list__buttons">
+        <a (click)="Add()" class="btn">Додати</a>
+        <a (click)="Cancel()" class="btn">Назад</a>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,41 @@
+<div class="my-container">
+  <ngx-loading [show]="loading"
+    [config]="{ backdropBorderRadius: '3px', primaryColour: '#ffff00', secondaryColour: '#ffff00', tertiaryColour: '#ffff00' }"></ngx-loading>
+</div>
+<section class="view-Profile__page">
+  <div class="container">
+    <div class="view-Profile__body">
+      <div class="view-Profile__title">
+        <h1>Панель управління</h1>
+      </div>
+      <div class="view-Profile__Achievement ach">
+        <div style="display: flex; width: 100%; justify-content: space-around; padding-bottom: 50px; ">
+          <div class="ach__result" *ngIf="user">
+            <p>Кількість списків: {{user.WordCollectionCount}}</p>
+            <p>Кількість слів: {{user.NumberOfWords}}</p>
+          </div>
+          <div class="ach__dost" *ngIf="user">
+            <p><a routerLink="/profile">
+                {{user.Username}}
+              </a></p>
+            <p>Досвід: {{user.CurrentExperience}}</p>
+          </div>
+        </div>
+
+        <div class="dostizheniya__block" *ngFor="let wordCollection of userWordCollections; index as i;">
+          <a [routerLink]="'/mylist/'+wordCollection.WordCollection_ID+'/view'">
+            <p style="text-align: center;">{{wordCollection.Name}}</p>
+          </a>
+          <p>Кількість слів: {{wordCollection.Words.length}}</p>
+          <p>{{wordCollection.Description | truncate: 20}}</p>
+          <div class="dostizheniya__btns">
+            <a (click)="Delete(wordCollection.WordCollection_ID)" class="btn">Видалити</a>
+          </div>
+        </div>
+      </div>
+      <div class="view-Profile__buttons">
+        <a routerLink="mylist/list-add" class="btn">Додати список</a>
+      </div>
+    </div>
+  </div>
+</section>

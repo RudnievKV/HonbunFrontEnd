@@ -1,0 +1,35 @@
+<ngx-loading [show]="loading"
+  [config]="{ backdropBorderRadius: '3px', primaryColour: '#ffff00', secondaryColour: '#ffff00', tertiaryColour: '#ffff00' }"></ngx-loading>
+<section class="add-list__page">
+  <div class="container">
+    <div class="add-list__body">
+      <div class="add-list__title">
+        <h1>Профіль</h1>
+      </div>
+      <div style="display: flex; flex-direction: column; align-items: center;">
+        <div class="add-list__inputs">
+          <p>Ім'я</p>
+          <div style="display: flex; align-items: center;"><input type="text" id="my-input" placeholder="Ім'я"
+              [(ngModel)]="username">
+          </div>
+        </div>
+        <div class="add-list__inputs">
+          <p>Емейл</p>
+          <div style="display: flex; align-items: center;"><input type="text" id="my-input" placeholder="Емейл"
+              [(ngModel)]="email">
+          </div>
+        </div>
+        <div class="add-list__inputs">
+          <p>Новий пароль</p>
+          <div style="display: flex; align-items: center;"><input type="text" id="my-input" placeholder="Новий пароль"
+              [(ngModel)]="password">
+          </div>
+        </div>
+      </div>
+      <div class="add-list__buttons">
+        <a (click)="Change()" class="btn">Змінити</a>
+        <a (click)="Cancel()" class="btn">Назад</a>
+      </div>
+    </div>
+  </div>
+</section>

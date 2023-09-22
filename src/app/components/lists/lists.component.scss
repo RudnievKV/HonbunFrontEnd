@@ -1,0 +1,74 @@
+.add-list__page {
+  text-align: center;
+}
+
+.container {}
+
+.add-list__body {
+  border: 2px solid black;
+  border-radius: 5px;
+  margin-top: 50px;
+  margin: 60px 240px;
+}
+
+.add-list__title {}
+
+.add-list__inputs {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 15px;
+
+  input {
+    width: 50%;
+    padding: 5px 5px;
+    outline: none;
+    font-weight: 600;
+  }
+}
+
+.add-list__buttons {
+  padding-top: 40px;
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+}
+
+.btn {
+  margin-bottom: 20px;
+  padding: 10px 20px;
+  font-weight: 500;
+  background-color: #ccc;
+  color: #333;
+  text-decoration: none;
+  border-radius: 4px;
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+  outline: none;
+}
+
+.btn:hover {
+  background-color: rgb(204, 118, 118);
+}
+
+
+.listbody {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 5px;
+  border: 1px solid black;
+  margin: 25px 25px;
+}
+
+.listelements {
+  text-align: left;
+  width: 75%;
+
+  p {
+    padding: 5px 5px 5px 5px;
+  }
+}

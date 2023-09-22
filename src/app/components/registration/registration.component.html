@@ -1,0 +1,36 @@
+<ngx-loading [show]="loading"
+  [config]="{ backdropBorderRadius: '3px', primaryColour: '#ffff00', secondaryColour: '#ffff00', tertiaryColour: '#ffff00' }"></ngx-loading>
+<section class="add-list__page">
+  <div class="container">
+    <div class="add-list__body">
+      <div class="add-list__title">
+        <h1>Регістрація</h1>
+      </div>
+      <form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+        <div style="display: flex; flex-direction: column; align-items: center;">
+          <div class="add-list__inputs">
+            <p>Емейл</p>
+            <input type="email" id="email" placeholder="Введите текст" formControlName="email" required>
+          </div>
+          <div class="add-list__inputs">
+            <p>Пароль</p>
+            <input type="password" id="password" placeholder="Введите текст" formControlName="password" required>
+          </div>
+          <div class="add-list__inputs">
+            <p>Повторити пароль</p>
+            <input type="password" id="confirmPassword" placeholder="Введите текст" formControlName="confirmPassword"
+              required>
+          </div>
+          <div class="add-list__inputs">
+            <p>Ім'я користувача</p>
+            <input type="text" id="username" placeholder="Username" formControlName="username" required>
+          </div>
+        </div>
+        <div class="add-list__buttons">
+          <button type="submit" id="submit" class="btn" [disabled]="!registerForm.valid">Зареєструватися</button>
+          <a routerLink="/login" class="btn">Назад</a>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
